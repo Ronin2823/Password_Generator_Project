@@ -7,7 +7,8 @@ def get_user_input():
     include_letters = input("Include letters? (yes/no): ").strip().lower()
     include_numbers = input("Include numbers? (yes/no): ").strip().lower()
     include_symbols = input("Include symbols? (yes/no): ").strip().lower()
-
+    #TODO: The flow stops here fix the enter file name 
+    #TODO: Make the user capable to change the directory of the file 
     file_name = input("Enter the file name to save the hashed password (e.g., passwords.txt): ").strip()
 
     return length, include_letters, include_numbers, include_symbols
