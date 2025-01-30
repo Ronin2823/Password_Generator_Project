@@ -1,85 +1,41 @@
 # Password Generator
 
-## Project Overview
-This Python project is a **Password Generator** that creates random, secure passwords based on user-defined criteria such as length and character types (letters, numbers, symbols). It is designed as an introductory project for beginners to learn Python programming fundamentals like string manipulation, user input handling, and working with libraries.
-
----
+## Description
+This is a Python-based password generator with a graphical user interface (GUI) built using Tkinter. Users can specify password length, character types (letters, numbers, symbols), and save the hashed password to a file with a timestamp.
 
 ## Features
-1. User-defined password length.
-2. Options to include:
-   - Letters (uppercase and lowercase)
-   - Numbers
-   - Symbols
-3. Generates a secure, randomized password based on user preferences.
-4. Error handling for invalid inputs or missing criteria.
-
----
-
-## How It Works
-1. The user is prompted to input:
-   - Desired password length.
-   - Whether to include letters, numbers, and symbols.
-2. The program constructs a pool of characters based on the user’s choices.
-3. A random password of the specified length is generated and displayed to the user.
-
----
+- Graphical User Interface (GUI) for easy interaction.
+- User-defined password length and character inclusion options.
+- Secure password hashing using SHA-256.
+- Option to save generated passwords with timestamps.
 
 ## Requirements
 - Python 3.x
+- Tkinter (Included in standard Python installation)
 
-No additional libraries are required as the program uses Python’s built-in `random` module.
-
----
-
-## How to Run the Program
-1. Clone or download this repository.
-2. Open a terminal and navigate to the folder containing the `password_generator.py` file.
-3. Run the program with:
+## Installation
+1. Clone the repository:
    ```bash
-   python password_generator.py
+   git clone https://github.com/Ronin2823/Password_Generator_Project.git
    ```
-4. Follow the prompts to generate your password.
+2. Navigate to the project directory:
+   ```bash
+   cd Password_Generator_Project
+   ```
+3. Run the script:
+   ```bash
+   python main.py
+   ```
 
----
-
-## Example Usage
-### Input:
-```
-Enter the desired password length: 12
-Include letters? (yes/no): yes
-Include numbers? (yes/no): yes
-Include symbols? (yes/no): no
-```
-
-### Output:
-```
-Your generated password: a9f6kLr2n1xP
-```
-
----
-
-## File Structure
-- `password_generator.py`: The main script containing the password generator logic.
-
----
-
-## Code Organization
-### Functions:
-1. **`get_user_input()`**: Handles user input for password preferences.
-2. **`build_char_pool()`**: Creates a pool of characters based on user choices.
-3. **`generate_password()`**: Generates a random password of the specified length.
-4. **`main()`**: Ties everything together and handles program execution.
-
----
-
-## Future Enhancements
-- Add a feature to generate multiple passwords at once.
-- Include a password strength evaluation.
-- Save generated passwords to a file.
-- Add a graphical user interface (GUI).
-
----
+## Usage
+1. Open the application.
+2. Enter the desired password length.
+3. Select character types to include.
+4. Click "Generate & Save" to create a password.
+5. Choose a file to save the hashed password with a timestamp.
 
 ## License
-This project is licensed under the MIT License. Feel free to use and modify it as needed.
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contributions
+Pull requests and suggestions are welcome! Feel free to contribute by improving the GUI or adding new features.
